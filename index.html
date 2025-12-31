@@ -89,7 +89,8 @@
             <li><a href="#section3">3 Additional DisCo-Speech Zero-Shot Demos </a></li>
             <ul>
                 <li><a href="#section3.1">3.1 Voice Cloning </a></li>
-                <li><a href="#section3.2">3.2 Zero-Shot Controllable Generation Demos </a></li>
+                <li><a href="#section3.1">3.2 Cross lingual Voice Cloning </a></li>
+                <li><a href="#section3.2">3.3 Zero-Shot Controllable Generation Demos </a></li>
             </ul>
         </ul>
     </section>
@@ -1765,7 +1766,182 @@
         </div>
 
 
-        <h3 id="section3.2">3.2 Zero-Shot Controllable Generation Demos </h3>
+        <h3 id="section3.2">3.2 Cross lingual Voice Cloning </h3>
+        <h4>
+            This section showcases the DisCo-Speech's superior prosodic continuation capability in cross lingual voice cloning, which
+            precisely captures and reproduces <font class="highlight">not only speaking styles but also nuanced
+                accents from the audio prompt.</font>
+        </h4>
+        <div class="demo-section">
+            <div class="table-container">
+                <!--table style="width:100%"-->
+                <table class="zebra-table">
+                    <tr>
+                        <th>Audio-Prompt</th>
+                        <th style="min-width:200px;">Target Text</th>
+                        <th>DisCo-Speech</th>
+                        <th>Audio-Prompt</th>
+                        <th style="min-width:200px;">Target Text</th>
+                        <th>DisCo-Speech</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/0735_en.aac" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> English male speaker </p>
+                            </div>
+                        </td>
+                        <td>该药品需在二十五摄氏度以下的干燥环境中避光保存。</td>
+                        <!-- <td> -->
+                            <td style="border-right: 2px solid #333;">
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/0735_en_该药品需" type="audio/wav">
+                                </audio></div>
+                        </td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/idextts2_08_angry_3.aac" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> Mandarin male speaker with angry emotion </p>
+                            </div>
+                        </td>
+                        <td>Participants in the clinical trial will be monitored for a period of six months after treatment.</td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/idextts2_08_angry_3_Part.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/en_12.wav" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> English male speaker </p>
+                            </div>
+                        </td>
+                        <td>本次软件更新的重点在于修复已知漏洞并提升系统运行稳定性。</td>
+                        <!-- <td> -->
+                            <td style="border-right: 2px solid #333;">
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/en_12_本次软件.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/seed_cn_f_story.wav" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> Mandarin famale speaker with storyteling style </p>
+                            </div>
+                        </td>
+                        <td>According to the user manual, the device should be charged for at least three hours before first use.</td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/seed_cn_f_story_according_to_the_18.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/en_f_24605843.wav" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> English famale speaker </p>
+                            </div>
+                        </td>
+                        <td>记得祖母总把中药包收在檀木柜最阴凉的格子里，说这样药性才能保持完整。</td>
+                        <!-- <td> -->
+                            <td style="border-right: 2px solid #333;">
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/en_f_24605843_记得祖母.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/seed_cn_TYZR.wav" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> Mandarin male speaker with accent </p>
+                            </div>
+                        </td>
+                        <td>The research team has published their findings in the latest issue of the prestigious scientific journal.</td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/seed_cn_TYZR_The.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/en_m_28132727.wav" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> English male speaker </p>
+                            </div>
+                        </td>
+                        <td>参观污水处理厂时，讲解员指着第四道净水池说这里的水已经可以养锦鲤了。</td>
+                        <!-- <td> -->
+                            <td style="border-right: 2px solid #333;">
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/en_m_28132727_参观污水.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/TTS_002_100-2.wav" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> Mandarin famale speaker </p>
+                            </div>
+                        </td>
+                        <td>The architectural design incorporates passive cooling techniques to reduce energy consumption.</td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/TTS_002_100-2_the_architectural_design_23.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/en_yindu_f_25626822.wav" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> English famale speaker </p>
+                            </div>
+                        </td>
+                        <td>国际研讨会茶歇期间，那位白发学者用十二种语言说了同一句谢谢。</td>
+                        <!-- <td> -->
+                            <td style="border-right: 2px solid #333;">
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/en_yindu_f_25626822_国际研讨_41.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/TTS_006_101.wav" type="audio/wav">
+                                </audio>
+                                <p class="audio-caption"> Mandarin famale speaker </p>
+                            </div>
+                        </td>
+                        <td>The catalyst increases the reaction rate by several orders of magnitude.</td>
+                        <td>
+                            <div class="demo-item"><audio controls>
+                                    <source src="ex_tts_show/add_cross_lingual/TTS_006_101_the_catalyst_increases_56.wav" type="audio/wav">
+                                </audio></div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+
+        <h3 id="section3.2">3.3 Zero-Shot Controllable Generation Demos </h3>
         <h4>We employ distinct audio prompts as references for timbre and prosody expression, respectively, such that
             speaker timbre and speaking prosodic are derived
             from separate audio prompts. This demo demonstrates DisCo-speech's control over content, prosody, and timbre in a zero-shot setting.
