@@ -59,7 +59,7 @@ table {
     background: rgba(255, 255, 255, 0.9);
 }
 th {
-    background: linear-gradient(135deg, #f8f3b2, #b2cbf8);
+    background: linear-gradient(135deg, #b2cbf8, #b2cbf8);
     color: rgb(219, 118, 16);
     font-weight: 600;
     padding: 7px;
