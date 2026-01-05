@@ -96,7 +96,7 @@ audio {
     width: 230px;
     height: 40px;
 }
-.video-section {
+/* .video-section {
   width: 100%;
   padding: 40px 0;
   background: #ecf1f7;
@@ -145,8 +145,60 @@ audio {
   .video-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
+} */
+/* 修改后的 video-section */
+/* 修改 video-section，确保它是垂直堆叠标题和视频的容器 */
+.video-section {
+    width: 100%;
+    padding: 30px 0;
+    background: #ecf1f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 确保标题和 grid 居中 */
+  }
+  
+  /* 限制标题宽度，防止撑开容器 */
+  .section-title, h4 {
+      max-width: 800px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  /* 关键修改：调整网格 */
+  .video-grid {
+    display: grid;
+    /* 强制在 PC 端显示为两列，每列占一半 */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    /* 调小整体最大宽度，视频自然会变小 */
+    max-width: 1000px; 
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .video-card {
+    background: #f5ecec;
+    border-radius: 12px; /* 稍微调小圆角更精致 */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 确保视频充满卡片宽度 */
+  .intro-video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* 响应式：如果屏幕太窄（如手机），再恢复成上下排列 */
+  @media (max-width: 600px) {
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 
 .paper-description {
     line-height: 1.6;

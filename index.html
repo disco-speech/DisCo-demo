@@ -13,6 +13,7 @@
 
 <body>
 
+
     <!-- Page 0 -->
     <section class="container" id="section0">
         <h1>DisCo-Speech: Controllable Zero-Shot Speech Generation with A Disentangled Speech Codec</h1>
@@ -53,14 +54,14 @@
             style="display: flex; flex-direction: column; align-items: center; margin: 30px 0; gap: 30px;">
             <div class="diagram-container" style="text-align: center;">
                 <img src="png_mp4/discodec.png" alt="DisCo-Speech Overall Architecture"
-                    style="width: 100%; max-width: 650px; height: auto; border: 1px solid #ddd; border-radius: 4px; padding: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    style="width: 100%; max-width: 750px; height: auto; border: 1px solid #ddd; border-radius: 4px; padding: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                 <p style="margin-top: 10px; font-size: 14px; color: #666; line-height: 1.4; max-width: 650px;">
                     Fig 1: The structure and two-stage training of DisCodec.
                 </p>
             </div>
             <div class="diagram-container" style="text-align: center;">
                 <img src="png_mp4/disco-speech.png" alt="DisCodec Detailed Structure"
-                    style="width: 100%; max-width: 650px; height: auto; border: 1px solid #ddd; border-radius: 4px; padding: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    style="width: 100%; max-width: 750px; height: auto; border: 1px solid #ddd; border-radius: 4px; padding: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                 <p style="margin-top: 10px; font-size: 14px; color: #666; line-height: 1.4; max-width: 650px;">
                     Fig 2: The overview of DisCo-Speech.
                 </p>
@@ -69,31 +70,35 @@
 
 
         <section class="video-section">
+            <h2 class="section-title">DisCo-Speech for Audiobook Dubbing</h2> 
+            
+            <h4 class="section-subtitle">
+                Achieving decoupled control over speaker timbre and prosody, our model enables any target speaker to adopt desired prosodic styles. In these demonstrations, the narration and individual character voices—encompassing both timbre and emotional style—are synthesized using distinct acoustic references from various speakers.
+                Crucially, the specific choices of timbre and stylistic descriptions are automatically selected from our library by an understanding model, based on a deep analysis of the novel's context."
+            </h4>
+        
             <div class="video-grid">
-                <!-- 1nd video -->
                 <div class="video-card">
                     <video class="intro-video" controls poster="png_mp4/tlbb_1.png">
                         <source src="png_mp4/tlbb_1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="video-caption">
-                        <div class="caption-text">DisCo-Speech for Audiobook Dubbing: A Case Study on a Classic Scene from Demi-Gods and Semi-Devils</div>
+                        <div class="caption-text"> A Case Study on a Classic Scene from Demi-Gods and Semi-Devils</div>
                     </div>
                 </div>
-
-                <!-- 2st video -->
-                <!-- <div class="video-card">
-                    <video class="intro-video" controls poster="png_mp4/tlbb_2.jpg">
-                        <source src="ex6/Empresses_in_the_Palace_1.mp4" type="video/mp4">
+        
+                <div class="video-card">
+                    <video class="intro-video" controls poster="png_mp4/tlbb_2.png">
+                        <source src="png_mp4/tlbb_2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="video-caption">
-                        <div class="caption-text">IndexTTS2: Controllable Emotional Speech Generation for Audiovisual Dubbing – A Case Study on Iconic Scenes from Empresses in the Palace</div>
+                        <div class="caption-text"> A Case Study on a Classic Scene from Demi-Gods and Semi-Devils</div>
                     </div>
-                </div> -->
-
+                </div>
             </div>
-        </section>        
+        </section>
 
         <!-- contents --> 
         <h2>Contents</h2>
